@@ -2,8 +2,8 @@ import React from "react";
 import {render} from "react-dom";
 import {connect} from "react-redux";
 
-import {TwoWheel} from "../components/TwoWheel";
-import {FourWheel} from "../components/FourWheel";
+import {TwoWheeler} from "../components/TwoWheeler";
+import {FourWheeler} from "../components/FourWheeler";
 
 import {addDiscount} from "../actions/discountActions";
 import {addVisitor} from "../actions/visitorActions";
@@ -14,11 +14,11 @@ class App extends React.Component {
 		var fourWheelSpecs = {manufacturer : "Maruti Suzuki"};
 		
         return ( 
-			<div>
+			<div style={{border: '5px solid grey'}}>
 				 <div className="container">
 					<div className="row">
 						<div className="row">
-							<TwoWheel name="Enfield Classic" 
+							<TwoWheeler name="Enfield Classic" 
 									  specs={twoWheelSpecs} 
 									  price="0" 
 									  changeVisitor={(name) => this.props.setVisitorName(name)} 
@@ -27,11 +27,11 @@ class App extends React.Component {
 						</div>
 					</div>
 				  </div>
-			  
+				<hr/>
 				  <div className="container">
 					<div className="row">
 						<div className="row">
-							<FourWheel 
+							<FourWheeler 
 								name="Grand Vitara" 
 								specs={fourWheelSpecs} 
 								visitor={this.props.visitorProp.visitorName}

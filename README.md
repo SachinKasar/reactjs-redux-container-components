@@ -10,7 +10,7 @@
 **Steps to follow**
 
 :one: clone git repo with 
-**npm clone https://github.com/SachinKasar/reactjs-redux-container-components.git**
+**git clone https://github.com/SachinKasar/reactjs-redux-container-components.git**
 
 :two: install npm packages with command
 **npm install**

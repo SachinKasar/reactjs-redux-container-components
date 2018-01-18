@@ -2,7 +2,7 @@ import React from "react";
 
   
 
-const discountReducer = (state={visitorName:"XYZ", discount:"10000"}, action) => {
+const discountReducer = (state={visitorName:"XYZ", discount:"5%"}, action) => {
 	switch (action.type) {
 		case 'ADD_DISCOUNT':
 			state = { 

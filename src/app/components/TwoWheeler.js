@@ -4,9 +4,7 @@ import {render} from "react-dom";
 // TwoWheeler as a Class Component
 export const TwoWheeler = (props) =>  {
 	  return ( 
-		    <div className="container">
-                <div className="row">
-				    <div className="row">
+		    <div  className="alert alert-warning" >
 						<h1 style={{color:'blue'}}> Two Wheeler </h1>
 						<ul>
 							<li>
@@ -26,11 +24,10 @@ export const TwoWheeler = (props) =>  {
 							 
 						</ul>
 						<div className="btn-group btn-group-sm">
-							<button onClick={() => props.changeVisitor('New Visitor')} className="btn btn-primary" >Update Visitor</button>
-							<button onClick={() => props.changeDiscount('10%')} className="btn btn-primary" >Update Discount</button>
+							<button style={{margin:'5px'}} onClick={() => props.changeVisitor('New Visitor')} className="btn btn-primary" >Update Visitor</button>
+							<button style={{margin:'5px'}} onClick={() => props.changeDiscount('10%')} className="btn btn-primary" >Update Discount</button>
 						</div>
-					</div>
-				</div>
+					 
 				</div>
       
         );
